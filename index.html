@@ -18,53 +18,59 @@
 			<div class="row justify-content-center">
 				<div class="col-md-6 text-center mb-5">
 					<h2 class="heading-section">INFORME DE PREFECTURA</h2>
+					<p>Fecha de hoy: <span id="fecha"></span></p>
 				</div>
 			</div>
 			<h3>DATOS DEL ALUMNO</h3>
-      <div class="row">
-        <div class="col-md-4">NOMBRE</div>
-        <div class="col-md-4">CLASFICACION</div>
-      </div>
-      
-     <hr>
+                           <div class="row">
+                              <div class="col-md-4">NOMBRE</div>
+					<div class="table-wrap">
+						<table class="table table-striped">
+						  <thead>
+						    <tr>
+						      <th>INFO ALUMNO</th>
+						    </tr>
+						  </thead>
+						  <tbody>
+						    <tr>
+						      <th scope="row">JORGE RAMOS FLORES</th>
+						    </tr>
+						  </tbody>
+						</table>
+					</div>
+                              <div class="col-md-4">CLASFICACION</div>
+                           </div>
+                               <hr>
      
-      <h3>CALIFICACIONES</h3>
-      <div class="row">
-        <div class="col-md-3">NADA</div>
-        <div class="col-md-6">CALIFICACIONES</div>
-        <div class="col-md-3">NADA</div>
-      </div>
-      
-       <hr>
+                          <h3>CALIFICACIONES</h3>
+                           <div class="row">
+                              <div class="col-md-3">NADA</div>
+                              <div class="col-md-6">CALIFICACIONES</div>
+                              <div class="col-md-3">NADA</div>
+                             </div>
+                                 <hr>
 
-      <h3>ASISTENCIA</h3>
-      <div class="row">
-        <div class="col-md-4">ASISTENCIA 1</div>
-        <div class="col-md-4">ASISTENCIA 2</div>
-      </div>
-      
-       <hr>
-
-      <h3>CHECA LA LINEA</h3>
-      <p class="text-warning">No grid classes are necessary for full-width elements.</p>
-
-      <hr>
-
-    <h3>CONDUCTA</h3>
-      <div class="row">
-        <div class="col-md-6">CONDUCTA</div>
-        <div class="col-md-6">PERSONALIDAD</div>
-      </div>
-     <div class="row">
-        <div class="col-md-3">FECHA</div>
-        <div class="col-md-3">INCIDENCIA</div>
-        <div class="col-md-3">ACCIONES</div>
-        <div class="col-md-3">UPORDOWN</div>
-      </div>
-      
-      <hr>
-      
-
+                           <h3>ASISTENCIA</h3>
+                             <div class="row">
+                                <div class="col-md-4">ASISTENCIA 1</div>
+                                <div class="col-md-4">ASISTENCIA 2</div>
+                             </div>
+                                  <hr>
+                           <h3>CHECA LA LINEA</h3>
+                             <p class="text-warning">No grid classes are necessary for full-width elements.</p>
+                              <hr>
+                            <h3>CONDUCTA</h3>
+                                <div class="row">
+                                    <div class="col-md-6">CONDUCTA</div>
+                                    <div class="col-md-6">PERSONALIDAD</div>
+                                </div>
+                                <div class="row">
+                                   <div class="col-md-3">FECHA</div>
+                                   <div class="col-md-3">INCIDENCIA</div>
+                                   <div class="col-md-3">ACCIONES</div>
+                                   <div class="col-md-3">UPORDOWN</div>
+                                </div>
+                                         <hr>
 			<div class="row">
 				<div class="col-md-12">
 					<div class="table-wrap">
@@ -103,11 +109,16 @@
 			</div>
 		</div>
 	</section>
-
+        <script>
+         // JavaScript para mostrar la fecha de hoy
+         var hoy = new Date();
+         var fecha = hoy.getDate() + '/' + (hoy.getMonth() + 1) + '/' + hoy.getFullYear();
+         document.getElementById('fecha').textContent = fecha;
+        </script>
 	<script src="js/jquery.min.js"></script>
-  <script src="js/popper.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/main.js"></script>
+        <script src="js/popper.js"></script>
+       <script src="js/bootstrap.min.js"></script>
+       <script src="js/main.js"></script>
 
 	</body>
 </html>
