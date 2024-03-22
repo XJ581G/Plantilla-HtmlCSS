@@ -16,14 +16,15 @@
 	<section class="ftco-section">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-md-6 text-center mb-5">
+				<div class="col-md-12 text-center mb-5">
 					<h2 class="heading-section">INFORME DE PREFECTURA</h2>
 					<p>Fecha de hoy: <span id="fecha"></span></p>
 				</div>
 			</div>
 			<h3>DATOS DEL ALUMNO</h3>
                    <div class="row">
-				       <table class="table">
+                    <div class="col-md-12">
+				       <table class="table-responsive fixed-table-body">
 						  <tbody>
 						    <tr>
 						      <th scope="row"><p>nombre</p>
@@ -42,13 +43,14 @@
 						       </td>
 						    </tr>
 						  </tbody>
-					</table>
+					    </table>
+                      </div>
                    </div>
                                <hr>
      
                           <h3>CALIFICACIONES</h3>
                            <div class="row">
-				             <table class="table">
+				             <table class="table-responsive fixed-table-body">
 						         <tbody>
 						            <tr>
 						              <th scope="row">Nada</th>
@@ -68,9 +70,12 @@
 
                            <h3>ASISTENCIA</h3>
                            <div class="row">
-				       <table class="table">
-						  <tbody>
-						    <tr>
+                             <div class="col-md-12">
+				             <table class="table-responsive fixed-table-body">
+                  
+						      <tbody>
+						      <tr>
+                              
 						      <th scope="row">GENERAL
                                    <table class="table">
 						                <tr>
@@ -78,6 +83,8 @@
 						                </tr>					             
 							        </table>
                               </th>
+                              
+                           
 						      <th scope="row">POR TRIMESTRE
 					               <table class="table">
 						                <tr>
@@ -85,9 +92,11 @@
 						                </tr>					                
 							        </table>
 						       </th>
+                               
 						    </tr>
 						  </tbody>
-					</table>
+					  </table>
+                    </div>
                    </div>
                                   <hr>
                            <h3>CHECA LA LINEA</h3>
@@ -95,9 +104,9 @@
                               <hr>
                             <h3>CONDUCTA</h3>
                                 <div class="row">
-				       <table class="table">
-						  <tbody>
-						    <tr>
+				            <table class="table-responsive fixed-table-body">
+						       <tbody>
+						     <tr>
 						      <th scope="row">TEMPORAL
                                    <table class="table">
 						                <tr>
@@ -128,9 +137,9 @@
 						  </thead>
 						  <tbody>
 						    <tr>
-						      <th scope="row">10/03/2024</th>
-						      <td>Incidencia 1 descripcion</td>
-						      <td>Acuerdo 1 listado</td>
+						      <th scope="row">fecha</th>
+						      <td>Incidencia</td>
+						      <td>Acuerdo</td>
 						      <td><a href="#" class="btn btn-success">Terminado</a></td>
 						    </tr>
 
@@ -151,7 +160,6 @@
         <script src="js/popper.js"></script>
        <script src="js/bootstrap.min.js"></script>
        <script src="js/main.js"></script>
-
 	</body>
 </html>
 
